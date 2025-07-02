@@ -16,4 +16,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  # 根目錄作為要發佈的內容
+          publish_dir: .
+          publish_branch: gh-pages
+          force_orphan: true
+
